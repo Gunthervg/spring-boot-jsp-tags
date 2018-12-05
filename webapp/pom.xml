@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spring-boot-sample-web-jsp</artifactId>
         <groupId>org.springframework.boot</groupId>
-        <version>1.5.19.BUILD-SNAPSHOT</version>
+        <version>1.5.17.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -27,6 +27,14 @@
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -43,7 +51,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>shared</artifactId>
-            <version>1.5.19.BUILD-SNAPSHOT</version>
+            <version>1.5.17.RELEASE</version>
         </dependency>
         <!-- Provided -->
         <dependency>
