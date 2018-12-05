@@ -7,11 +7,21 @@
         <module>shared</module>
     </modules>
     <parent>
-        <!-- Your own application should inherit from spring-boot-starter-parent -->
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-samples</artifactId>
-        <version>1.5.19.BUILD-SNAPSHOT</version>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.17.RELEASE</version>
     </parent>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>Brussels-SR14</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <artifactId>spring-boot-sample-web-jsp</artifactId>
     <packaging>pom</packaging>
     <name>Spring Boot Web JSP Sample</name>
