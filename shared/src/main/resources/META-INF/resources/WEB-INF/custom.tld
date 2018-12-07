@@ -12,7 +12,7 @@
 
     <tag-file>
         <name>custom</name>
-        <path>/META-INF/tags/custom.tag</path>
+        <path>/WEB-INF/tags/custom.tag</path>
     </tag-file>
 
 </taglib>
